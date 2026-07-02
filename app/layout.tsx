@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SudharsanGPT",
-  description: "SudharsanGPT — a fast, minimal AI chat assistant.",
+  title: "SanjayGPT",
+  description: "SanjayGPT — a fast, minimal AI chat assistant.",
 };
 
 export default function RootLayout({
