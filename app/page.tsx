@@ -233,7 +233,7 @@ export default function Home() {
               </svg>
             </div>
             <span className="font-display text-[15px] font-semibold tracking-tight">
-              Sudharsan<span className="text-accent">GPT</span>
+              Sanjay<span className="text-accent">GPT</span>
             </span>
           </div>
 
@@ -395,7 +395,7 @@ function EmptyState({ onPick }: { onPick: (text: string) => void }) {
         </svg>
       </div>
       <h1 className="font-display text-2xl font-semibold tracking-tight">
-        Sudharsan<span className="text-accent">GPT</span>
+        Sanjay<span className="text-accent">GPT</span>
       </h1>
       <p className="mt-2 max-w-sm text-sm text-mist">
         Ask anything — write, code, plan, research, or just think out loud.
