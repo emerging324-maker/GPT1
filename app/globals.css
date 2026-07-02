@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", ui-sans-serif, sans-serif;
+  --font-body: "Inter", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html,
+body {
+  height: 100%;
+  background: #0b0c0f;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #ededf0;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #22252b;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c2f36;
+}
+
+/* Focus visibility */
+:focus-visible {
+  outline: 2px solid #2dd4bf;
+  outline-offset: 2px;
+}
+
+/* Markdown content inside assistant bubbles */
+.prose-chat p {
+  margin: 0 0 0.75em 0;
+}
+.prose-chat p:last-child {
+  margin-bottom: 0;
+}
+.prose-chat ul,
+.prose-chat ol {
+  margin: 0 0 0.75em 1.25em;
+}
+.prose-chat li {
+  margin: 0.15em 0;
+}
+.prose-chat pre {
+  background: #0b0c0f;
+  border: 1px solid #22252b;
+  border-radius: 10px;
+  padding: 0.85em 1em;
+  overflow-x: auto;
+  margin: 0.75em 0;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+.prose-chat code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: #1a1c21;
+  padding: 0.15em 0.4em;
+  border-radius: 5px;
+}
+.prose-chat pre code {
+  background: transparent;
+  padding: 0;
+}
+.prose-chat a {
+  color: #2dd4bf;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-chat h1,
+.prose-chat h2,
+.prose-chat h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0.9em 0 0.4em 0;
+}
+.prose-chat blockquote {
+  border-left: 2px solid #2dd4bf;
+  padding-left: 0.85em;
+  color: #8a8f98;
+  margin: 0.75em 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
