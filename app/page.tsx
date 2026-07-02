@@ -13,7 +13,7 @@ type Conversation = {
   createdAt: number;
 };
 
-const STORAGE_KEY = "sudharsangpt.conversations";
+const STORAGE_KEY = "SanjayGPT.conversations";
 
 function uid() {
   return Math.random().toString(36).slice(2) + Date.now().toString(36);
@@ -306,7 +306,7 @@ export default function Home() {
             </svg>
           </button>
           <span className="font-display text-sm font-medium text-paper/80">
-            {active?.title ?? "SudharsanGPT"}
+            {active?.title ?? "SanjayGPT"}
           </span>
         </header>
 
@@ -344,7 +344,7 @@ export default function Home() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Message SudharsanGPT…"
+              placeholder="Message SanjayGPT…"
               rows={1}
               className="max-h-[200px] flex-1 resize-none bg-transparent py-2 text-[15px] leading-relaxed text-paper placeholder:text-mist focus:outline-none"
             />
@@ -372,7 +372,7 @@ export default function Home() {
             )}
           </div>
           <p className="mx-auto mt-2 max-w-3xl text-center text-[11px] text-mist">
-            SudharsanGPT can make mistakes. Verify important information.
+            SanjayGPT can make mistakes. Verify important information.
           </p>
         </div>
       </div>
